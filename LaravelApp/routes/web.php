@@ -9,3 +9,6 @@ Route::get('/', function () {
 
 Route::get('/greet', [GreetController::class, 'show']);
 
+use App\Http\Controllers\TaskController;
+
+Route::resource('tasks', TaskController::class);
